@@ -20,7 +20,9 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "format": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "vercel-build": "next build",
+    "vercel-start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
