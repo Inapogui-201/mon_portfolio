@@ -10,15 +10,21 @@ interface ProjectCardProps {
   link?: string
 }
 
-export function ProjectCard({ name, description, technologies, image, link }: ProjectCardProps) {
-  const CardWrapper = link ? Link : 'div'
-  const cardProps = link ? { href: link, target: '_blank', rel: 'noopener noreferrer' } : {}
-
+function CardContent({
+  name,
+  description,
+  technologies,
+  image,
+  hasLink,
+}: {
+  name: string
+  description: string
+  technologies: string[]
+  image: string
+  hasLink: boolean
+}) {
   return (
-    <CardWrapper
-      {...cardProps}
-      className="group relative flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:border-gray-300 dark:border-gray-800 dark:bg-gray-900 dark:hover:border-gray-700"
-    >
+    <>
       {/* Image Section */}
       <div className="relative h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
         <Image
@@ -29,7 +35,7 @@ export function ProjectCard({ name, description, technologies, image, link }: Pr
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-        {link && (
+        {hasLink && (
           <div className="absolute top-3 right-3 rounded-full bg-white/90 p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:bg-gray-900/90">
             <ArrowUpRight className="h-4 w-4 text-gray-900 dark:text-white" />
           </div>
@@ -57,6 +63,37 @@ export function ProjectCard({ name, description, technologies, image, link }: Pr
 
       {/* Hover Effect Border */}
       <div className="absolute inset-0 rounded-xl border-2 border-transparent transition-colors duration-300 group-hover:border-blue-500/50" />
-    </CardWrapper>
+    </>
+  )
+}
+
+export function ProjectCard({ name, description, technologies, image, link }: ProjectCardProps) {
+  const cardClassName =
+    'group relative flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:border-gray-300 dark:border-gray-800 dark:bg-gray-900 dark:hover:border-gray-700'
+
+  if (link) {
+    return (
+      <Link href={link} target="_blank" rel="noopener noreferrer" className={cardClassName}>
+        <CardContent
+          name={name}
+          description={description}
+          technologies={technologies}
+          image={image}
+          hasLink={true}
+        />
+      </Link>
+    )
+  }
+
+  return (
+    <div className={cardClassName}>
+      <CardContent
+        name={name}
+        description={description}
+        technologies={technologies}
+        image={image}
+        hasLink={false}
+      />
+    </div>
   )
 }
