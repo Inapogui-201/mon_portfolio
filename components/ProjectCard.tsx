@@ -5,9 +5,9 @@ import { cn } from '@/utils/css'
 interface ProjectCardProps {
   name: string
   description: string
-  link: string
-  image: string
-  technologies: string[]
+  link?: string
+  image?: string
+  technologies?: string[]
 }
 
 export function ProjectCard({ name, description, link, image, technologies }: ProjectCardProps) {
