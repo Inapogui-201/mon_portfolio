@@ -76,7 +76,7 @@ export default function Contact() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Contactez-moi</h1>
         <p className="text-lg text-gray-600 max-w-3xl">
           Vous avez un projet en tête ou souhaitez simplement discuter ? Je suis toujours ouvert aux
-          nouvelles opportunités et collaborations. N'hésitez pas à me contacter !
+          nouvelles opportunités et collaborations. N&apos;hésitez pas à me contacter !
         </p>
       </section>
 
@@ -177,7 +177,7 @@ export default function Contact() {
             {submitStatus === 'error' && (
               <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
                 <p className="text-red-700 font-medium">
-                  ❌ Erreur lors de l'envoi. Veuillez réessayer.
+                  ❌ Erreur lors de l&apos;envoi. Veuillez réessayer.
                 </p>
               </div>
             )}
@@ -255,8 +255,8 @@ export default function Contact() {
           <div className="p-6 bg-orange-50 rounded-lg border-l-4 border-orange-500">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Disponibilité</h3>
             <p className="text-gray-700">
-              Je suis actuellement disponible pour de nouveaux projets et collaborations. N'hésitez
-              pas à me contacter pour discuter de vos besoins !
+              Je suis actuellement disponible pour de nouveaux projets et collaborations.
+              N&apos;hésitez pas à me contacter pour discuter de vos besoins !
             </p>
           </div>
         </section>

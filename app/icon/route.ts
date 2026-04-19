@@ -15,7 +15,7 @@ export async function GET() {
         'Cache-Control': 'public, max-age=31536000, immutable',
       },
     })
-  } catch (error) {
+  } catch {
     return new NextResponse('Icon not found', { status: 404 })
   }
 }

@@ -1,6 +1,5 @@
 import { HomeContact } from '@/components/pages/home/HomeContact'
 import { HomeHero } from '@/components/pages/home/HomeHero'
-import { HomeProjects } from '@/components/pages/home/HomeProjects'
 import { HomeSocials } from '@/components/pages/home/HomeSocials'
 import type { Metadata } from 'next'
 

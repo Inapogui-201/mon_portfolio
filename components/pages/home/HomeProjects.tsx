@@ -47,9 +47,9 @@ export function HomeProjects() {
             Mon approche de développement
           </h2>
           <p className="text-gray-700 mb-4">
-            Chaque projet que je réalise est une opportunité d'innover et de repousser les limites
-            techniques. Je m'engage à créer des solutions web modernes, performantes et adaptées aux
-            besoins spécifiques de chaque client.
+            Chaque projet que je réalise est une opportunité d&apos;innover et de repousser les
+            limites techniques. Je m&apos;engage à créer des solutions web modernes, performantes et
+            adaptées aux besoins spécifiques de chaque client.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-center p-3">
