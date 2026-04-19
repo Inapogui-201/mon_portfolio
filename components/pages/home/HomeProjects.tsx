@@ -13,7 +13,7 @@ interface Project {
 const projects: Array<Project> = [
   {
     name: 'Etando',
-    description: 'Application de reservation de logement pour étudiant au Maroc.',
+    description: 'Application de reservation de logement pour étudiant etrangers au Maroc.',
     link: links.projects.etando,
     image: '/etando.png',
     technologies: ['React', 'Node.js', 'MongoDB'],
