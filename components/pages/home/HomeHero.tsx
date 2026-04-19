@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { LogoReact } from '@/components/logos/tech/LogoReact'
-import { links } from '@/data/links'
 
 export function HomeHero() {
   return (
@@ -35,14 +34,6 @@ export function HomeHero() {
           fonction des besoins spécifiques du projet.
         </p>
       </div>
-
-      <p className="relative mt-4 pl-5 text-xs text-tertiary">
-        <span className="absolute left-0 top-1/2 size-3.5 -translate-y-1/2 rounded-full bg-green-500 border-4 border-green-100" />
-        Disponible pour de nouveaux projets, parlons-en !{' '}
-        <a href={`mailto:${links.email}`} className="underline text-accent">
-          contact@inapogui.com
-        </a>
-      </p>
     </section>
   )
 }

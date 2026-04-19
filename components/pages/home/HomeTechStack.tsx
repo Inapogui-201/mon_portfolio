@@ -10,7 +10,6 @@ import { LogoReact } from '@/components/logos/tech/LogoReact'
 import { LogoShadcnUi } from '@/components/logos/tech/LogoShadcnUi'
 import { LogoTailwind } from '@/components/logos/tech/LogoTailwind'
 import { LogoTypescript } from '@/components/logos/tech/LogoTypescript'
-import { LogoVercel } from '@/components/logos/tech/LogoVercel'
 import { SectionHeader } from '@/components/SectionHeader'
 
 const techStack = [
@@ -61,10 +60,6 @@ const techStack = [
   {
     label: 'Github',
     icon: LogoGithub,
-  },
-  {
-    label: 'Vercel',
-    icon: LogoVercel,
   },
 ]
 

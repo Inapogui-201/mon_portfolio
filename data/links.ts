@@ -3,9 +3,8 @@ export const links = {
   phone: '0601519276',
   projects: {
     etando: 'https://www.etando.ma/',
-    troveur: 'https://www.troveur.com/',
-    lamergogroup: 'https://www.lamergogroup.com/',
-    mrCode: 'https://www.mrcode.ma/',
+    troveur: 'https://frontend-troveur.vercel.app/',
+    belabidjan: 'https://belabidjan.com/',
   },
   social: {
     linkedin: 'https://www.linkedin.com/in/michel-inapogui-862b4a338',

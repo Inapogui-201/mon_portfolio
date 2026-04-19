@@ -1,20 +1,18 @@
 import { SectionHeader } from '@/components/SectionHeader'
-import { links } from '@/data/links'
 
 export function HomeContact() {
   return (
     <section>
       <SectionHeader heading="Discutez avec moi" />
 
-      <p className="mb-1.5">
-        Vous pouvez me joindre <span className="hidden xs:inline">toujours</span> par email:{' '}
+      <p className="relative mt-4 pl-5 text-xs text-tertiary">
+        <span className="absolute left-0 top-1/2 size-3.5 -translate-y-1/2 rounded-full bg-green-500 border-4 border-green-100" />
+        Disponible pour de nouveaux projets et de nouveaux défis, parlons-en !{' '}
         <a
-          className="group inline-flex items-center gap-1 font-medium text-primary"
-          href={`mailto:${links.email}`}
+          href="/contact"
+          className="inline-flex items-center gap-2 px-2.5 h-6 bg-zinc-100 text-accent underline rounded-full outline-none font-medium text-xs transition-all hover:bg-zinc-200/75 focus:ring-3 focus:ring-zinc-200"
         >
-          <span className="relative inline-block after:absolute after:inset-x-0 after:-bottom-px after:h-px after:bg-accent after:transition-all after:duration-300 group-hover:after:h-0.5">
-            contact@inapogui.com
-          </span>
+          contactez-moi
         </a>
       </p>
     </section>

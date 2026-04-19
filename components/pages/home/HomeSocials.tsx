@@ -16,10 +16,10 @@ const socialLinks = [
     fill: 'fill-[#0a66c2]',
   },
   {
-    label: 'Telegram',
-    image: '/telegram.svg',
-    href: links.social.telegram,
-    fill: 'fill-[#0a66c2]',
+    label: 'GitHub',
+    image: '/github_light.svg',
+    href: links.social.github,
+    fill: 'fill-[#333]',
   },
 ]
 
